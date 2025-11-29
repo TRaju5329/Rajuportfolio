@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Privacy Policy - KharchuLu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg-top: #bfa9ff;
+      --bg-mid: #b7a2ff;
+      --bg-bottom: #ffffff;
+      --card-bg: #ffffff;
+      --text-main: #111827;
+      --text-muted: #6b7280;
+      --accent: #4f46e5;
+      --border-subtle: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: linear-gradient(180deg, var(--bg-top), var(--bg-mid), var(--bg-bottom));
+      color: var(--text-main);
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+
+    .card {
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 20px;
+      background: var(--card-bg);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+      padding: 24px 20px 28px;
+    }
+
+    @media (min-width: 768px) {
+      .card {
+        padding: 32px 32px 36px;
+      }
+    }
+
+    .header {
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      justify-content: space-between;
+    }
+
+    .app-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      background: #eef2ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 18px;
+      color: var(--accent);
+    }
+
+    .title-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .title-text h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .title-text span {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .meta {
+      text-align: right;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    h2 {
+      margin: 20px 0 8px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 6px 0 10px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #374151;
+    }
+
+    ul {
+      margin: 6px 0 10px 18px;
+      padding: 0;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #374151;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+
+    .section-tag-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: #3b82f6;
+    }
+
+    .highlight-box {
+      margin-top: 12px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: #fefce8;
+      border: 1px solid #facc15;
+      font-size: 13px;
+      color: #854d0e;
+    }
+
+    .highlight-box strong {
+      font-weight: 700;
+    }
+
+    .contact-box {
+      margin-top: 12px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: #eef2ff;
+      border: 1px solid #c7d2fe;
+      font-size: 14px;
+    }
+
+    .contact-box a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-note {
+      margin-top: 24px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 12px;
+      color: #9ca3af;
+      text-align: center;
+    }
+
+    .code {
+      font-family: monospace;
+      background: #f3f4f6;
+      border-radius: 4px;
+      padding: 0 4px;
+      font-size: 0.9em;
+    }
+
+    .list-title {
+      font-weight: 600;
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <main class="card">
+      <header class="header">
+        <div class="app-title">
+          <div class="logo-circle">K</div>
+          <div class="title-text">
+            <h1>KharchuLu – Privacy Policy</h1>
+            <span>Personal finance &amp; expense tracker app</span>
+          </div>
+        </div>
+        <div class="meta">
+          <div>Last Updated: <strong>22 November 2025</strong></div>
+        </div>
+      </header>
+
+      <section>
+        <p>
+          <strong>KharchuLu</strong> (“the App”, “we”, “our”, “us”) is a personal finance application
+          that helps you track expenses, incomes, investments, budgets, and recurring transactions.
+          We respect your privacy and are committed to protecting your data.
+        </p>
+        <p>
+          This Privacy Policy explains what information we collect, how we use it, and the choices you have.
+          By using KharchuLu, you agree to the terms described in this policy.
+        </p>
+      </section>
+
+      <!-- 1. Information We Collect -->
+      <section>
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          Section 1
+        </div>
+        <h2>Information We Collect</h2>
+
+        <p class="list-title">1.1 Personal Information</p>
+        <p>
+          We do <strong>not require</strong> you to create an online account and we do <strong>not</strong> ask for:
+        </p>
+        <ul>
+          <li>Your full name</li>
+          <li>Home address</li>
+          <li>Aadhaar / PAN / government ID numbers</li>
+          <li>Bank account numbers</li>
+          <li>Credit or debit card details</li>
+        </ul>
+        <p>
+          The only personal information we may receive is your <strong>email address</strong> if you contact us
+          for support or feedback.
+        </p>
+
+        <p class="list-title">1.2 Financial Data Entered by You</p>
+        <p>
+          KharchuLu stores data that <strong>you manually enter</strong>, including:
+        </p>
+        <ul>
+          <li>Expense records</li>
+          <li>Income records</li>
+          <li>Investment records</li>
+          <li>Categories and notes</li>
+          <li>Budgets and limits</li>
+          <li>Recurring transaction rules</li>
+        </ul>
+        <p>
+          This data is stored <strong>locally on your device</strong>. It is not automatically uploaded to our servers.
+        </p>
+
+        <p class="list-title">1.3 Device &amp; Technical Data</p>
+        <p>
+          To improve stability and performance, we may collect non-personal technical information such as:
+        </p>
+        <ul>
+          <li>Device model and operating system version</li>
+          <li>App version</li>
+          <li>Anonymous crash logs and error reports</li>
+        </ul>
+        <p>
+          This information, if collected (e.g. via crash reporting tools), is used purely for debugging and
+          improving the app.
+        </p>
+      </section>
+
+      <!-- 2. How Your Data is Stored -->
+      <section>
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          Section 2
+        </div>
+        <h2>How Your Data is Stored</h2>
+
+        <p>
+          All financial data you enter in KharchuLu is stored <strong>locally on your device</strong> using
+          local storage technologies (for example, local databases or persistent storage mechanisms).
+        </p>
+        <p>
+          We do <strong>not</strong> automatically upload your financial data to any remote server owned
+          by us. If you uninstall the app or clear its data, the locally stored information will be removed
+          from your device.
+        </p>
+
+        <div class="highlight-box">
+          <strong>Important:</strong> Since your financial data is stored only on your device by default,
+          we strongly recommend using the export feature (CSV / PDF) regularly if you want to keep backups.
+        </div>
+      </section>
+
+      <!-- 3. Data Sharing -->
+      <section>
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          Section 3
+        </div>
+        <h2>Data Sharing</h2>
+
+        <p>
+          We do <strong>not</strong> sell, rent, or trade your personal or financial data with any third party.
+        </p>
+        <ul>
+          <li>We do not share your expense, income, or investment details with advertisers.</li>
+          <li>We do not send your financial records to analytics companies.</li>
+          <li>We do not share your financial data with payment gateways or external services.</li>
+        </ul>
+        <p>
+          Any data that leaves your device does so <strong>only when you explicitly export or share it</strong>
+          (for example, as a CSV or PDF file).
+        </p>
+      </section>
+
+      <!-- 4. How We Use Your Data -->
+      <section>
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          Section 4
+        </div>
+        <h2>How We Use Your Data (Inside the App)</h2>
+
+        <p>
+          All of the financial data you enter is used <strong>within the app only</strong> to provide features such as:
+        </p>
+        <ul>
+          <li>Showing daily, weekly, monthly, and yearly totals</li>
+          <li>Calendar view where you can see how much you spent or invested on a particular day</li>
+          <li>Viewing, editing, updating, or deleting transactions for any date</li>
+          <li>Generating analytics like category-wise charts and line trends</li>
+          <li>Managing budgets and showing warnings when you cross your limit</li>
+          <li>Handling recurring transactions according to rules you configure</li>
+        </ul>
+        <p>
+          These calculations and views are generated on your device based on the data you have entered.
+        </p>
+      </section>
+
+      <!-- 5. Budget Warnings & Notifications -->
+      <section>
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          Section 5
+        </div>
+        <h2>Budget Warnings &amp; Notifications</h2>
+
+        <p>
+          KharchuLu allows you to set budgets for different time ranges, such as:
+        </p>
+        <ul>
+          <li>Daily budgets</li>
+          <li>Monthly budgets</li>
+          <li>Yearly budgets</li>
+          <li>Custom range budgets</li>
+        </ul>
+
+        <p>
+          When your spending crosses the budget limit you configured:
+        </p>
+        <ul>
+          <li>The budget bar on the home screen may turn <strong>red</strong> to indicate you are over budget.</li>
+          <li>When you are within your budget, the bar may show as <strong>green</strong>.</li>
+          <li>You may receive warning messages or notifications (for example, every 5 minutes) to remind you that your budget has been exceeded, depending on your settings.</li>
+        </ul>
+        <p>
+          These budget calculations and alerts are processed locally on your device.
+        </p>
+      </section>
+
+      <!-- 6. Data Export -->
+      <section>
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          Section 6
+        </div>
+        <h2>Data Export (CSV / PDF)</h2>
+
+        <p>
+          KharchuLu provides an option to export your transactions and summaries as:
+        </p>
+        <ul>
+          <li>CSV (Comma-Separated Values) files</li>
+          <li>PDF reports</li>
+        </ul>
+        <p>
+          Export happens only when you manually request it from within the app. Exported files are saved
+          on your device or to a location you choose (for example, cloud storage or email), and are not
+          automatically sent to us.
+        </p>
+      </section>
+
+      <!-- 7. Permissions -->
+      <section>
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          Section 7
+        </div>
+        <h2>Permissions We Use</h2>
+
+        <p>
+          Depending on your device and Android version, the app may request the following permissions:
+        </p>
+
+        <p class="list-title">7.1 Storage / Files</p>
+        <ul>
+          <li>To export CSV or PDF files and save them on your device.</li>
+          <li>To read or write the exported files when you choose to open or share them.</li>
+        </ul>
+
+        <p class="list-title">7.2 Notifications</p>
+        <ul>
+          <li>To show budget warnings when you cross your set limits.</li>
+          <li>To remind you about recurring transactions or important events, if enabled.</li>
+        </ul>
+
+        <p>
+          We do <strong>not</strong> request access to your contacts, precise location, microphone,
+          or camera for the core app functionality.
+        </p>
+      </section>
+
+      <!-- 8. Children’s Privacy -->
+      <section>
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          Section 8
+        </div>
+        <h2>Children’s Privacy</h2>
+
+        <p>
+          KharchuLu is intended for general use and is not specifically targeted at children under the age of 13.
+          We do not knowingly collect personal information from children.
+        </p>
+        <p>
+          If you believe that a child under 13 has provided us with personal information, please contact us
+          so that we can take appropriate action.
+        </p>
+      </section>
+
+      <!-- 9. Changes to This Privacy Policy -->
+      <section>
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          Section 9
+        </div>
+        <h2>Changes to This Privacy Policy</h2>
+
+        <p>
+          We may update this Privacy Policy from time to time to reflect changes in the app or in applicable laws.
+          When we do, we will update the “Last Updated” date at the top of this page. We encourage you to
+          review this policy periodically.
+        </p>
+      </section>
+
+      <!-- 10. Contact -->
+      <section>
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          Section 10
+        </div>
+        <h2>Contact Us</h2>
+
+        <p>
+          If you have any questions, concerns, or suggestions about this Privacy Policy or the way your data is handled,
+          please contact us:
+        </p>
+
+        <div class="contact-box">
+          Email: <a href="mailto:frontenddeveloperraju@gmail.com">frontenddeveloperraju@gmail.com</a>
+        </div>
+
+        <p style="margin-top: 10px; font-size: 13px; color: #6b7280;">
+          By using KharchuLu, you agree to this Privacy Policy. If you do not agree, please do not use the app.
+        </p>
+      </section>
+
+      <div class="footer-note">
+        © <span id="year"></span> KharchuLu. All rights reserved.
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Keep the year current automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
