@@ -3285,13 +3285,14 @@ a.btn-style-one::after {
 
 .btn-style-regular {
 	display: inline-block;
-	position: relative;
-	z-index: 1;
-	padding: 13px 20px;
-	color: var(--white);
-	padding-right: 100px;
-	text-transform: capitalize;
-	background: transparent;
+    position: relative;
+    z-index: 1;
+    padding: 13px 20px;
+    color: var(--white);
+    padding-right: 100px;
+    text-transform: capitalize;
+    background: #000;
+    border-radius: 6px;
 }
 
 .btn-style-regular:hover {
@@ -4163,12 +4164,12 @@ ul.list-style-one li::after {
 }
 
 .timeline-header {
-	padding: 30px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	border-bottom: 1px solid rgba(255, 255, 255, 1);
-	gap: 30px;
+	padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    gap: 10px;
 }
 
 .timeline-style-one-item:nth-child(2n) .timeline-header {
@@ -6447,3 +6448,127 @@ body.loaded {
 		opacity: 0;
 	}
 }
+
+
+
+
+
+/* =========================
+   Modern Button (Black -> Purple Hover)
+========================= */
+.modern-btn,
+.attr-nav .button a.modern-btn,
+.btn-style-regular.modern-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 14px 22px;
+  border-radius: 14px;
+  background: #000;
+  color: #fff !important;
+
+  border: 1px solid rgba(0,0,0,0.25);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+
+  transition: all 0.25s ease;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.modern-btn i {
+  transition: transform 0.25s ease;
+}
+
+.modern-btn:hover {
+  background: #7c3aed; /* Purple */
+  border-color: #7c3aed;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(124,58,237,0.25);
+}
+
+.modern-btn:hover i {
+  transform: translateX(3px);
+}
+
+/* If any button has btn-border, still keep same look */
+.btn-border.modern-btn {
+  background: #000;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* =========================
+   WhatsApp Floating Button
+========================= */
+.whatsapp-float {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 56px;
+  height: 56px;
+  z-index: 9999;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.whatsapp-float img {
+  width: 65%;
+  height: 65%;
+  object-fit: contain;
+  display: block;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.22);
+}
+
+/* Mobile size adjust */
+@media (max-width: 576px) {
+  .whatsapp-float {
+    width: 52px;
+    height: 52px;
+    right: 14px;
+    bottom: 14px;
+  }
+}
+
+.theme-toggle-float {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 55px;
+    height: 55px;
+    background: #111;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+}
+
+.theme-toggle-float i {
+    font-size: 22px;
+}
+
+.theme-toggle-float:hover {
+    background: #7c3aed;
+    color: #fff;
+}
+
